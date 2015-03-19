@@ -1,0 +1,22 @@
+Steps to run the program: (Eclipse Luna)
+------------------------
+
+2) Place the KMeans folder in your eclipse workspace.
+3) Create a MapReduce project.
+4) Import the project placed from the eclipse workspace.
+5) create the jar file for the project onto the desktop using eclipse.
+6) Create input and input1 folder with file1 (data) and centroid file respectively  on HDFS.
+7) Run the program on hadoop () with the following command:
+asim@asim-HP-Pavilion-g6-Notebook-PC:~/Softwares/hadoop-1.0.3$ ./bin/hadoop jar  ~/Desktop/<exported jar name>.jar KDriver input output
+
+Structure:
+---------
+Classes: 
+	1) KDriver (Driver class)  
+	2) KMapper (Mapper class)
+	3) KReducer (Reducer class)
+	4) KPartitioner (Partitioner Class)
+
+Input:
+	Data file     - input/file1
+	Centroid file - input1/centroid
